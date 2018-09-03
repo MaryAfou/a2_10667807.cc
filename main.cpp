@@ -4,28 +4,49 @@ using namespace std;
 
 int main()
 {
-int number, i=0;
+    int mark;
+    if(mark >=80 && mark <=100)
 
-bool isprime = true;
-cout<< "enter a positive integer ";
-cin>> number;
-
-for (i=2; i<=number/2; ++i)
-    if (number% i==0)
-{
-    isprime =false;
-    break;
-}
-    if (isprime)
-{
-    cout<<"this is a prime number";
-
+    {
+        cout<<"grade A";
 
     }
+       else if(mark >=75 && mark <=79)
+       {
+           cout<<"grade B+";
 
-else
-{
-    cout<<"this is not a prime number";
-}
-    return 0;
-}
+       }
+       else if(mark >=70 && mark <= 74)
+       {
+           cout<<"grade B";
+
+       }
+       else if(mark >=65 && mark <=69)
+                {
+                    cout<<"grade C+";
+
+                }
+            else if(mark >=60 && mark <=64)
+            {
+                cout<<"grade C";
+
+            }
+            else if(mark >=55 && mark <=59)
+          {
+              cout<<"grade D+";
+
+          }
+        else if(mark >=50 && mark <=54)
+        {
+            cout<<"grade D";
+        }
+        else if(mark >=45 && mark <=49)
+        {
+            cout<<"grade E";
+        }
+        else if(mark >=0 && mark <=39)
+        {
+            cout<<"grade F";
+        }
+        return 0;
+        }
